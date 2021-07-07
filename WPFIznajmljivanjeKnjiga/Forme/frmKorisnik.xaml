@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFIznajmljivanjeKnjiga.Forme.frmKorisnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFIznajmljivanjeKnjiga.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni korisnika" Height="500" Width="400">
+    <Grid>
+        <Image Source="korisnik.jpg" Margin="-56,-87,-54,0"/>
+        <Label Content="Ime:" HorizontalAlignment="Left" Margin="123,84,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="123,110,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <Label Content="JMBG:" HorizontalAlignment="Left" Margin="123,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.628,1.769" FontStyle="Italic"/>
+        <Label Content="Adresa:" HorizontalAlignment="Left" Margin="123,171,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <Label Content="Grad:" HorizontalAlignment="Left" Margin="123,201,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <Label Content="Kontakt" HorizontalAlignment="Left" Margin="121,231,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <TextBox Name="txtImeKorisnika" HorizontalAlignment="Left" Height="23" Margin="183,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116" Background="Bisque" FontStyle="Italic"/>
+        <TextBox Name="txtPrezimeKorisnika" HorizontalAlignment="Left" Height="23" Margin="183,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116" Background="Bisque" FontStyle="Italic" />
+        <TextBox Name="txtJMBGKorisnika" HorizontalAlignment="Left" Height="23" Margin="183,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116" Background="Bisque" FontStyle="Italic" />
+        <TextBox Name="txtAdresaKorisnika" HorizontalAlignment="Left" Height="23" Margin="183,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116" Background="Bisque" FontStyle="Italic" />
+        <TextBox Name="txtGradKorisnika" HorizontalAlignment="Left" Height="23" Margin="183,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116" Background="Bisque" FontStyle="Italic" />
+        <TextBox Name="txtKontaktKorisnika" HorizontalAlignment="Left" Height="23" Margin="183,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="116" Background="Bisque" FontStyle="Italic" />
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="213,284,0,0" VerticalAlignment="Top" Width="75" Click="BtnSacuvaj_Click" Background="LightGreen" FontStyle="Italic" />
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="123,284,0,0" VerticalAlignment="Top" Width="75" Click="BtnOtkazi_Click" Background="LightGreen" FontStyle="Italic" />
+
+    </Grid>
+</Window>

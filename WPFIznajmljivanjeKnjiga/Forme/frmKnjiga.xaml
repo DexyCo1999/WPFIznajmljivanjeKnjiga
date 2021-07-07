@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPFIznajmljivanjeKnjiga.Forme.frmKnjiga"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFIznajmljivanjeKnjiga.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni knjigu" Height="270" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="286*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="299"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="slika.jpg" Grid.ColumnSpan="2" Margin="-40,-316,-149,-317" Grid.RowSpan="3"></Image>
+
+        <Label Content="Naziv knjige:" HorizontalAlignment="Left" Margin="35,54,0,0" VerticalAlignment="Top" Foreground="Crimson" Height="26" Width="77" FontStyle="Italic" />
+        <Label Content="Izdavalac:" HorizontalAlignment="Left" Margin="35,83,0,0" VerticalAlignment="Top"  Foreground="Crimson" Height="26" Width="61" FontStyle="Italic"/>
+        <TextBox Name="txtNazivKnjige" HorizontalAlignment="Left" Height="23" Margin="150,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="Bisque" FontStyle="Italic"/>
+        <TextBox Name="txtIzdavalac" HorizontalAlignment="Left" Height="23" Margin="150,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="Bisque" FontStyle="Italic"/>
+
+        <Label Content="Autor:" HorizontalAlignment="Left" Margin="35,114,0,0" VerticalAlignment="Top"  Foreground="Crimson" Height="26" Width="42" FontStyle="Italic"/>
+        <Label Content="Vrsta knjige:" HorizontalAlignment="Left" Margin="35,148,0,0" VerticalAlignment="Top" Foreground="Crimson" Height="26" Width="74" FontStyle="Italic"/>
+        <ComboBox Name="cbxAutor" HorizontalAlignment="Left" Margin="150,117,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="PrezimeAutora" SelectedValuePath="AutorID" Foreground="Crimson" Background="Bisque" Height="22" FontStyle="Italic"/>
+        <ComboBox Name="cbxVrstaKnjige" HorizontalAlignment="Left" Margin="150,144,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivVrste" SelectedValuePath="VrstaID" Foreground="Crimson" Height="22" FontStyle="Italic"/>
+
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="164,207,0,0" VerticalAlignment="Top" Width="75" Click="BtnSacuvaj_Click"  Foreground="Crimson" Height="20" FontStyle="Italic"/>
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="37,207,0,0" VerticalAlignment="Top" Width="75" Click="BtnOtkazi_Click"  Foreground="Crimson" Height="20" FontStyle="Italic" />
+    </Grid>
+</Window>

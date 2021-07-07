@@ -1,0 +1,57 @@
+﻿<Window x:Class="WPFIznajmljivanjeKnjiga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFIznajmljivanjeKnjiga"
+        mc:Ignorable="d"
+        
+        Title="Biblioteka" Height="450" Width="800">
+    
+    <Grid>
+        <Image Source="C:\Users\Dejana\Desktop\pozadina.jpg" Margin="11,-405,-33,-432" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.042"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Height="auto" Width="auto"   FontStyle="Italic"                
+                  AlternatingRowBackground="DarkSeaGreen" IsReadOnly="True" 
+                               
+                  SelectionUnit="FullRow" SelectionMode="Single" CanUserAddRows="False"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="Auto" Height="30"
+                    Orientation="Horizontal" Background="DarkSeaGreen">   
+            
+            <Button Name="btnKorisnici" Click="BtnKorisnici_Click" Content="Korisnici" Width="75" HorizontalAlignment="Left" Height="30"
+                    VerticalAlignment="Top" FontStyle="Italic" Background="DarkSeaGreen"/>
+            <Button Name="btnKnjige" Click="BtnKnjige_Click" Content="Knjige" Width="75" HorizontalAlignment="Left" Height="30"
+                    VerticalAlignment="Top" FontStyle="Italic" Background="DarkSeaGreen"/>
+            <Button Name="btnIznajmljivanje" Click="BtnIznajmljivanje_Click" Content="Iznajmljivanje" Width="75" HorizontalAlignment="Left" Height="30"
+                    VerticalAlignment="Top" FontStyle="Italic" Background="DarkSeaGreen"/>
+            <Button Name="btnAutor" Click ="BtnAutor_Click" Content="Autor" Width="75" HorizontalAlignment="Left" Height="30"
+                    VerticalAlignment="Top" FontStyle="Italic" Background="DarkSeaGreen"/>
+            <Button Name="btnVrstaKnjige" Click="BtnVrstaKnjige_Click" Content="Vrste" Width="75" HorizontalAlignment="Left" Height="30"
+                    VerticalAlignment="Top" FontStyle="Italic" Background="DarkSeaGreen"/>
+            
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="Auto" Height="30"
+                    Orientation="Horizontal">
+            <Button Name="btnDodaj" Click ="BtnDodaj_Click" Content="Dodaj" Width="117" FontStyle="Italic" Background="DarkSeaGreen" />
+            <Button Name="btnIzmeni" Click ="BtnIzmeni_Click" Content="Izmeni" Width="117" FontStyle="Italic" Background="DarkSeaGreen"/>
+            <Button Name="btnObrisi" Click ="BtnObrisi_Click" Content="Obrisi" Width="117" FontStyle="Italic" Background="DarkSeaGreen" />
+
+
+        </StackPanel>
+        
+
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPFIznajmljivanjeKnjiga.Forme.Iznajmljivanje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFIznajmljivanjeKnjiga.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni potvrdu o iznajmljivanju" Height="750" Width="780">
+    <Grid>
+        <Image Source="bibl.jpg" Margin="-261,-546,-272,-608" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.042"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Datum iznajmljivanja:" HorizontalAlignment="Left" Margin="234,173,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <Label Content="Datum vraćanja:" HorizontalAlignment="Left" Margin="234,204,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <DatePicker Name="dpDatumIznajmiljivanja" HorizontalAlignment="Left" Margin="407,182,0,0" VerticalAlignment="Top" Foreground="DarkSeaGreen" FontStyle="Italic"/>
+        <DatePicker Name="dpDatumVracanja" HorizontalAlignment="Left" Margin="407,211,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.986,0.48" Foreground="DarkSeaGreen" FontStyle="Italic"/>
+
+        <Label Content="Kazna:" HorizontalAlignment="Left" Margin="234,231,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <CheckBox Name="cbKazna" Content="" HorizontalAlignment="Left" Margin="446,240,0,0" VerticalAlignment="Top" Background="DarkSeaGreen" />
+
+        <Label Content="Iznos kazne:" HorizontalAlignment="Left" Margin="234,256,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.424,-1.427" FontStyle="Italic"/>
+        <TextBox Name="txtIznosKazne" HorizontalAlignment="Left" Height="23" Margin="407,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.303,-1.327" FontStyle="Italic"/>
+
+        <Label Content="Knjiga:" HorizontalAlignment="Left" Margin="233,291,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <ComboBox Name="cbxKnjiga" HorizontalAlignment="Left" Margin="407,295,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivKnjige" SelectedValuePath="KnjigaID" FontStyle="Italic"/>
+
+        <Label Content="Korisnik:" HorizontalAlignment="Left" Margin="234,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.404,-1.318" FontStyle="Italic"/>
+        <ComboBox Name="cbxKorisnik" HorizontalAlignment="Left" Margin="407,322,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="PrezimeKorisnika" SelectedValuePath="KorisnikID" FontStyle="Italic"/>
+
+        <Button Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="364,375,0,0" VerticalAlignment="Top" Width="75" Click="BtnSacuvaj_Click" RenderTransformOrigin="0.56,0.95" Background="DarkSeaGreen" FontStyle="Italic"/>
+        <Button Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="254,375,0,0" VerticalAlignment="Top" Width="75" Click="BtnOtkazi_Click" RenderTransformOrigin="0.5,-0.125" Background="DarkSeaGreen" FontStyle="Italic"/>
+
+    </Grid>
+</Window>
